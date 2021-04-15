@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/******************** header-start ************************/
+header{
+    width: 100%;
+    background-image: url(../images/slider-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 23%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header svg{
+    position: absolute;
+    bottom: 0px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo{
+    width: 5%;
+    line-height: 0;
+}
+
+header nav .logo img{
+    width: 100%;
+}
+
+header nav .menu{
+    width: 50%;
+}
+
+header nav .menu ul{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    float: right;
+    padding-left: 0;
+}
+
+header nav .menu ul li{
+    width: 100px;
+    height: 50px;
+    list-style: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+header nav .menu ul li:nth-child(4){
+    width: 150px;
+}
+
+header nav .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.2s ease;
+}
+
+header nav .menu ul li a:hover{
+    font-size: 120%;
+    border-bottom: 3px solid #fff;
+}
+
+header .slide-para{
+    color: #fff;
+    padding-top: 13%;
+}
+
+header .slide-para h1{
+    font-size: 600%;
+}
+
+header .slide-para h3{
+    font-size: 300%;
+}
+
+header .slide-para h1, header .slide-para h3, header .slide-para p{
+    text-shadow: 1px 1px 1px #000;
+}
+
+/******************** header-end ************************/
+
+/******************** about-start ************************/
+.about-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about button{
+    background: transparent;
+    border: 1px solid #6600FF;
+    border-radius: 25px;
+    padding: 2% 3%;
+    color: #6600FF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}  
+
+.about button:hover{
+    background-image: url(../images/blurry-gradient-haikei.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.about-photo{
+    width: 50%;
+    line-height: 0;
+}
+
+.about-photo img{
+    width: 100%;
+}
+
+.about-para{
+    width: 50%;
+}
+
+.about-para h2{
+    font-size: 250%;
+    margin-bottom: 5%;
+}
+
+.about-para p{
+    line-height: 25px;
+}
+
+/******************** about-end ************************/
+
+/******************** our-core-values-start ************************/
+.core-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.core-values{
+    margin-top: 5%;
+}
+
+.core-values h1{
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.core{
+    width: 60%;
+}
+
+.core-photo{
+    width: 40%;
+    line-height: 0;
+}
+
+.values{
+    margin-bottom: 3%;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.values:hover{
+    border-left: 5px solid #6600FF;
+    padding-left: 3%;
+}
+
+.values h3{
+    margin-bottom: 1%;
+}
+
+.core-photo img{
+    width: 100%;
+}
+/******************** our-core-values-end ************************/
+
+/******************** testimonial-start ************************/
+.testimonial{
+    width: 100%;
+    background-image: url(../images/testimonial.jpg);
+    padding: 15% 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    position: relative;
+}
+
+.testimonial svg:first-child{
+    position: absolute;
+    top: 0;
+}
+
+.testimonial svg:last-child{
+    position: absolute;
+    bottom: 0;
+}
+
+.testimonial h2{
+    font-size: 250%;
+}
+
+.testimonial h2, .testimonial p{
+    text-align: center;
+}
+
+.testimonial p:first-child{
+    padding-top: 10%;
+    line-height: 25px;
+    padding-bottom: 2%;
+}
+
+/******************** testimonial-end ************************/
+
+/******************** features-start ************************/
+.features{
+    background-image: url(../images/circle-scatter-haikei.png);
+    background-position: center;
+}
+
+.features-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-photo{
+    width: 40%;
+    line-height: 0;
+}
+
+.features-photo img{
+    width: 100%;
+}
+
+.features-para{
+    width: 50%;
+    line-height: 25px;
+}
+
+.features-para h3{
+    font-size: 150%;
+    margin-bottom: 3%;
+}
+
+.features h2{
+    font-size: 250%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+/******************** features-end ************************/
+
+/******************** member-start ************************/
+.member-photo{
+    line-height: 0;
+}
+
+.member-photo img{
+    transition: 0.2s ease;
+    border-radius: 50%;
+}
+
+.member-detail{
+    text-align: center;
+    margin-top: 5%;
+    line-height: 25px;
+}
+
+.members h2{
+    font-size: 250%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.members{
+    margin-top: 5%;
+}
+
+
+.member{
+    cursor: pointer;
+}
+
+.member:hover > .member-photo img{
+    border: 10px solid #6600FF;
+}
+
+/******************** member-end ************************/
+
+/******************** contact-start ************************/
+.form-group{
+    width: 30%;
+}
+
+.first-form-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-group input{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    padding: 5%;
+    margin-top: 3%;
+}
+
+.form-group input:focus, .second-form-group textarea:focus{
+    outline: none;
+}
+
+.second-form-group{
+    width: 100%;
+    margin-top: 3%;
+}
+
+.second-form-group textarea{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 2%;
+    border: none;
+    margin-top: 1%;
+}
+
+.contact button{
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 1% 2%;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 1%;
+}  
+
+.contact button:hover{
+    background-image: url(../images/blurry-gradient-haikei.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.contact h2{
+    font-size: 250%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.contact{
+    background-image: url(../images/b00b4790ea2f817442761df4fcf3d067.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+    padding-top: 10%;
+}
+
+.contact svg{
+    position: absolute;
+    top: 0;
+}
+
+.final-one{
+    width: 50%;
+}
+
+.final{
+    display: flex;
+    justify-content: space-between;
+}
+
+.final-two{
+    width: 45%;
+}
+
+.final-two h1{
+    margin-bottom: 3%;
+}
+
+.final-two ul li{
+    list-style: none;
+    line-height: 25px;
+}
+
+.final-two ul li a{
+    font-size: 200%;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
+.footer{
+    text-align: center;
+    padding: 1% 0;
+    margin-top: 5%;
+}
+
+/******************** contact-end ************************/
