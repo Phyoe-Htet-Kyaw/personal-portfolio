@@ -88,6 +88,7 @@ header nav .menu ul li a:hover{
 header .slide-para{
     color: #fff;
     padding-top: 13%;
+    text-align: center;
 }
 
 header .slide-para h1{
@@ -96,6 +97,7 @@ header .slide-para h1{
 
 header .slide-para h3{
     font-size: 300%;
+    margin-bottom: 3%;
 }
 
 header .slide-para h1, header .slide-para h3, header .slide-para p{
