@@ -1,5 +1,18 @@
 $(function(){
     new WOW().init();
+
+    $('#page-uploader').hide();
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('#page-uploader').fadeIn();
+        } else {
+            $('#page-uploader').fadeOut();
+        }
+    });
+
+    $("#page-uploader").click(function () {
+        $("html, body").animate({scrollTop: 0}, 1000);
+     });
 })
 
 $('.testimonial-carousel').owlCarousel({
