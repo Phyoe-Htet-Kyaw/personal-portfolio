@@ -424,6 +424,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
     font-size: 200%;
     color: #fff;
     letter-spacing: 10px;
+    transition: 0.4s ease;
 }
 
 .footer{
@@ -433,3 +434,19 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 }
 
 /******************** contact-end ************************/
+
+#page-uploader{
+    background-color: #6600FF;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 120%;
+    box-shadow: 0 0 10px #000;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+}
