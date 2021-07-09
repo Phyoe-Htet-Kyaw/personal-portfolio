@@ -450,3 +450,77 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
     z-index: 10;
     cursor: pointer;
 }
+
+
+/******************** responsive ************************/
+@media screen and (max-width: 768px) {
+    #pc-nav{
+        display: none;
+    }
+
+    header .slide-para{
+        padding-top: 5%;
+    }
+    
+    header .slide-para h1{
+        font-size: 400%;
+    }
+    
+    header .slide-para h3{
+        font-size: 200%;
+    }
+
+    .about-part, .core-container, .features-icon, .final, .first-form-group {
+        display: block;
+    }
+
+    .about-photo, .about-para, .core, .core-photo, .features-photo, .features-para, .final-one, .final-two, .form-group {
+        width: 100%;
+    }
+
+    .features-icon{
+        margin-bottom: 10%;
+    }
+
+    .features-para, .final-two h1, .about-para, .core, header .slide-para {
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 5%;
+    }
+    
+    .final-two, .contact h2{
+        margin-top: 10%;
+    }
+
+    header .slide-para p{
+        margin-top: 5%;
+    }
+
+    .testimonial h2{
+        margin-top: 5%;
+    }
+
+    .features-para h3{
+        font-size: 130%;
+    }
+
+    .about-para h2, .core-values h1, .testimonial h2, .features h2, .members h2, .contact h2{
+        font-size: 200%;
+    }
+    
+    section{
+        padding: 0 10px;
+    }
+
+    #testimonial{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .testimonial .container, .contact .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
