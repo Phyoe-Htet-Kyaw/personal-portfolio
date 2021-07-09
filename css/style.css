@@ -113,10 +113,10 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 
 .about button{
     background: transparent;
-    border: 1px solid #6600FF;
+    border: 1px solid #186ba1;
     border-radius: 25px;
     padding: 2% 3%;
-    color: #6600FF;
+    color: #186ba1;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -188,7 +188,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 }
 
 .values:hover{
-    border-left: 5px solid #6600FF;
+    border-left: 5px solid #186ba1;
     padding-left: 3%;
 }
 
@@ -312,7 +312,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 }
 
 .member:hover > .member-photo img{
-    border: 10px solid #6600FF;
+    border: 10px solid #186ba1;
 }
 
 /******************** member-end ************************/
@@ -436,7 +436,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 /******************** contact-end ************************/
 
 #page-uploader{
-    background-color: #6600FF;
+    background-color: #186ba1;
     width: 50px;
     height: 50px;
     color: #fff;
@@ -452,13 +452,12 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 }
 
 #mobile-nav{
-    background-color: #6600FF;
+    background-color: #186ba1;
     width: 50px;
     height: 50px;
     color: #fff;
     font-size: 120%;
     box-shadow: 0 0 10px #000;
-    border-radius: 50%;
     position: fixed;
     right: 20px;
     top: 20px;
@@ -471,7 +470,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 .mobile-nav-panel{
     display: none;
     position: fixed;
-    background-color: #6600FF99;
+    background-color: #186ba199;
     width: 100%;
     height: 100vh;
     z-index: 20;
@@ -502,6 +501,72 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 .mobile-nav-panel ul li a{
     color: #fff;
     text-decoration: none;
+}
+
+#loader{
+    display: block;
+    background-color: #186ba1;
+    color: #fff;
+    font-size: 120%;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    position: fixed;
+}
+
+#loader .logo{
+    width: 5%;
+    line-height: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px 15.4px;
+    border-radius: 50%;
+    animation-name: oval;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin-top: 20%;
+    box-shadow: 0 0 10px #000;
+}
+
+#loader .logo img{
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #186ba1;
+}
+
+@keyframes oval {
+    0%{
+        transform: rotate(0deg);
+        width: 5%;
+        padding: 10px 15.4px;
+        box-shadow: 0 0 0px #000;
+    }
+    50%{
+        box-shadow: 0 0 25px #000;
+        width: 6%;
+        padding: 10px 16.5px;
+    }
+    100%{
+        transform: rotate(360deg);
+        width: 5%;
+        padding: 10px 15.4px;
+        box-shadow: 0 0 0px #000;
+    }
 }
 
 
@@ -580,10 +645,50 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    @keyframes oval {
+        0%{
+            transform: rotate(0deg);
+            width: 20%;
+            padding: 10px 15.4px;
+            box-shadow: 0 0 0px #000;
+        }
+        50%{
+            box-shadow: 0 0 25px #000;
+            width: 21%;
+            padding: 10px 15.4px;
+        }
+        100%{
+            transform: rotate(360deg);
+            width: 20%;
+            padding: 10px 15.4px;
+            box-shadow: 0 0 0px #000;
+        }
+    }
 }
 
 @media (min-width: 768.99px) and (max-width: 1024px) {
     .container{
         max-width: 768px;
+    }
+
+    @keyframes oval {
+        0%{
+            transform: rotate(0deg);
+            width: 8%;
+            padding: 10px 15.4px;
+            box-shadow: 0 0 0px #000;
+        }
+        50%{
+            box-shadow: 0 0 25px #000;
+            width: 9%;
+            padding: 10px 16.5px;
+        }
+        100%{
+            transform: rotate(360deg);
+            width: 8%;
+            padding: 10px 15.4px;
+            box-shadow: 0 0 0px #000;
+        }
     }
 }

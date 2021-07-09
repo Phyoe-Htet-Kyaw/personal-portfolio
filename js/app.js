@@ -1,3 +1,9 @@
+setTimeout(closeLoader, 3000);
+
+function closeLoader(){
+    $("#loader").fadeOut();
+}
+
 $(function(){
     new WOW().init();
     $('#page-uploader').hide();
