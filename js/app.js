@@ -12,26 +12,86 @@ $(function(){
         }
     });
 
+    $("#mobile-nav").click(function(){
+        $(".mobile-nav-panel").css("display", "block");
+        disableScroll();
+    });
+    
+    $(".mobile-nav-panel .close-btn").click(function(){
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
+    });
+
     $("#page-uploader").click(function () {
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
         $("html, body").animate({scrollTop: 0}, 1000);
     });
 
     $(".home-menu").click(function () {
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
         $("html, body").animate({scrollTop: 0}, 1000);
     });
 
     $(".about-menu").click(function () {
-        $("html, body").animate({scrollTop: $("#about").offset().top - 100}, 500);
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
+        $("html, body").animate({scrollTop: $("#about").offset().top - 100}, 1000);
     });
 
     $(".features-menu").click(function () {
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
         $("html, body").animate({scrollTop: $("#features").offset().top - 100}, 1000);
     });
 
     $(".contact-menu").click(function () {
+        $(".mobile-nav-panel").css("display", "none");
+        enableScroll();
         $("html, body").animate({scrollTop: $("#contact").offset().top - 50}, 1000);
     });
 })
+
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
 
 $('.testimonial-carousel').owlCarousel({
     loop:true,
