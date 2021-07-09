@@ -18,6 +18,12 @@ body{
 }
 
 /******************** header-start ************************/
+.home-menu,
+.about-menu,
+.features-menu,
+.contact-menu{
+    cursor: pointer;
+}
 header{
     width: 100%;
     background-image: url(../images/slider-2.jpg);
@@ -245,6 +251,7 @@ header .slide-para h1, header .slide-para h3, header .slide-para p{
 .features{
     background-image: url(../images/circle-scatter-haikei.png);
     background-position: center;
+    overflow-x: hidden;
 }
 
 .features-icon{
