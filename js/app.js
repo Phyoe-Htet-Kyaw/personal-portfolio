@@ -1,6 +1,5 @@
 $(function(){
     new WOW().init();
-
     $('#page-uploader').hide();
     $(".fixed-nav").hide();
     $(window).scroll(function() {
@@ -22,7 +21,7 @@ $(function(){
     });
 
     $(".about-menu").click(function () {
-        $("html, body").animate({scrollTop: $("#about").offset().top - 100}, 1000);
+        $("html, body").animate({scrollTop: $("#about").offset().top - 100}, 500);
     });
 
     $(".features-menu").click(function () {
